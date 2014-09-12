@@ -11,8 +11,8 @@
       "value": "sentry.conf"
     },
     "SENTRY_KEY": {
-      "description": "Secret Sentry API Key (e.g. http://www.guidgen.com/ )",
-      "value": ""
+      "description": "Generated Secret Sentry API Key",
+        "generator": "secret"
     },
     "SENTRY_URL_PREFIX": {
       "description": "Sentry URL.",
@@ -25,6 +25,14 @@
     "ADMINS": {
       "description": "Administrator email list.",
       "value": "john.matrix@example.com,jack.daniels@example.com"
+    },
+    "MANDRILL_USERNAME": {
+        "description": "Username for Mandrill account",
+        "default": ""
+    },
+    "MANDRILL_APIKEY": {
+        "description": "API Key for Mandrill account",
+        "default": ""
     }
   },
   "scripts": {
