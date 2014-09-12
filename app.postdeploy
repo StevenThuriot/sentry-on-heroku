@@ -1,0 +1,5 @@
+#!/bin/bash -x
+
+easy_install -UZ "sentry[postgres]"
+#sentry --config=$DJANGO_SETTINGS_MODULE syncdb
+#sentry --config=$DJANGO_SETTINGS_MODULE upgrade
