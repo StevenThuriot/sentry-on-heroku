@@ -13,11 +13,7 @@ Follow the steps below to get Sentry up and running on Heroku:
 
 1. [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-2. Run Sentry's database migrations::
-
-        heroku run "sentry --config=sentry.conf.py upgrade"
-
-3. Create a user account for yourself::
+2. Create a user account for yourself::
 
         heroku run "sentry --config=sentry.conf.py createsuperuser"
 
