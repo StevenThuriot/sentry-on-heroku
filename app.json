@@ -3,6 +3,7 @@
   "description": "A realtime, platform-agnostic error logging and aggregation platform.",
   "repository": "https://github.com/StevenThuriot/sentry-on-heroku/",
   "addons": ["heroku-postgresql", "mandrill"],
+  "logo": "https://raw.githubusercontent.com/getsentry/sentry/master/docs/_static/logo.png",
   "env": {
     "DJANGO_SETTINGS_MODULE": {
       "description": "The configuration file name. (This shouldn't be altered)",
