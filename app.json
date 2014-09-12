@@ -25,14 +25,6 @@
     "ADMINS": {
       "description": "Administrator email list.",
       "value": "john.matrix@example.com,jack.daniels@example.com"
-    },
-    "MANDRILL_USERNAME": {
-        "description": "Username for Mandrill account",
-        "default": ""
-    },
-    "MANDRILL_APIKEY": {
-        "description": "API Key for Mandrill account",
-        "default": ""
     }
   },
   "scripts": {
