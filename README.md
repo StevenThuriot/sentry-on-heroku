@@ -1,4 +1,4 @@
-Sentry on Heroku
+![Sentry](http://img.dafont.com/preview.php?text=Sentry&ttf=squared_display0&ext=1&size=64&psize=m&y=53)
 ================
 
 [Sentry](http://github.com/getsentry/sentry) is a realtime event logging and aggregation platform.  
