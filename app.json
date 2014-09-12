@@ -1,0 +1,29 @@
+{
+  "name": "Sentry",
+  "description": "A realtime, platform-agnostic error logging and aggregation platform.",
+  "repository": "https://github.com/StevenThuriot/sentry-on-heroku/",
+  "addons": ["heroku-postgresql", "mandrill"],
+  "env": {
+    "DJANGO_SETTINGS_MODULE": {
+      "description": "The configuration file name. (This shouldn't be altered)",
+      "value": "sentry.conf"
+    },
+    "SENTRY_KEY": {
+      "description": "Secret Sentry API Key (e.g. http://www.guidgen.com/ )",
+      "value": ""
+    },
+    "SENTRY_URL_PREFIX": {
+      "description": "Sentry URL.",
+      "value": "https://sentry.example.com"
+    },
+    "SERVER_EMAIL": {
+      "description": "Sentry's email.",
+      "value": "sentry@example.com"
+    },
+    "ADMINS": {
+      "description": "Administrator email list.",
+      "value": "john.matrix@example.com,jack.daniels@example.com"
+    }
+  },
+  "keywords": [ "sentry", "realtime", "error", "logging" ]
+}
