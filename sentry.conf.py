@@ -72,46 +72,6 @@ DEFAULT_FROM_EMAIL = os.environ.get(
 INSTALLED_APPS += ('djangosecure',)
 MIDDLEWARE_CLASSES += ('djangosecure.middleware.SecurityMiddleware',)
 
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
-# Whether to use HTTPOnly flag on the session cookie. If this is set to `True`,
-# client-side JavaScript will not to be able to access the session cookie.
-SESSION_COOKIE_HTTPONLY = True
-
-# Whether to use a secure cookie for the session cookie.  If this is set to
-# `True`, the cookie will be marked as "secure," which means browsers may
-# ensure that the cookie is only sent under an HTTPS connection.
-SESSION_COOKIE_SECURE = True
-
-# If set to `True`, causes `SecurityMiddleware` to set the
-# `X-Content-Type-Options: nosniff` header on all responses that do not already
-# have that header.
-SECURE_CONTENT_TYPE_NOSNIFF = True
-
-# If set to `True`, causes `SecurityMiddleware` to set the
-# `X-XSS-Protection: 1; mode=block` header on all responses that do not already
-# have that header.
-SECURE_BROWSER_XSS_FILTER = True
-
-# If set to `True`, causes `SecurityMiddleware` to set the `X-Frame-Options:
-# DENY` header on all responses that do not already have that header
-SECURE_FRAME_DENY = True
-
-# If set to a non-zero integer value, causes `SecurityMiddleware` to set the
-# HTTP Strict Transport Security header on all responses that do not already
-# have that header.
-SECURE_HSTS_SECONDS = 31536000
-
-# If `True`, causes `SecurityMiddleware` to add the ``includeSubDomains`` tag
-# to the HTTP Strict Transport Security header.
-#
-# Has no effect unless ``SECURE_HSTS_SECONDS`` is set to a non-zero value.
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-
-# If set to True, causes `SecurityMiddleware` to redirect all non-HTTPS
-# requests to HTTPS
-SECURE_SSL_REDIRECT = True
-
 
 # Bcrypt
 # ------
