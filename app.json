@@ -2,7 +2,7 @@
   "name": "Sentry",
   "description": "A realtime, platform-agnostic error logging and aggregation platform.",
   "repository": "https://github.com/StevenThuriot/sentry-on-heroku/",
-  "addons": ["heroku-postgresql", "mandrill"],
+  "addons": ["heroku-postgresql", "mandrill", "pgbackups:auto-month"],
   "logo": "https://raw.githubusercontent.com/getsentry/sentry/master/docs/_static/logo.png",
   "keywords": [ "sentry", "realtime", "error", "logging" ],
   "env": {
